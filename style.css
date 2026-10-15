@@ -15,7 +15,7 @@ body {
 
 /* الصندوق الرئيسي للحاسبة */
 .calculator {
-    width: 390px;
+    width: 320px;
     padding: 20px;
     background-color: #0f172a;
     border-radius: 24px;
@@ -24,7 +24,7 @@ body {
 
 /* شاشة العرض */
 .display {
-    min-height: 170px;
+    min-height: 100px;
     padding: 16px;
     margin-bottom: 20px;
     background-color: #1e293b;
