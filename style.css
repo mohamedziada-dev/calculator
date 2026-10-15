@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #034343;
+    font-family: Arial, sans-serif;
+}
+
+/* الصندوق الرئيسي للحاسبة */
+.calculator {
+    width: 390px;
+    padding: 20px;
+    background-color: #0f172a;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* شاشة العرض */
+.display {
+    min-height: 170px;
+    padding: 16px;
+    margin-bottom: 20px;
+    background-color: #1e293b;
+    color: #f1f5f9;
+    text-align: right;
+    border-radius: 16px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.expression {
+    min-height: 20px;
+    font-size: 1rem;
+    color: #94a3b8;
+}
+
+.current {
+    font-size: 2.5rem;
+}
+
+/* شبكة الأزرار: 4 أعمدة */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* الشكل العام لكل الأزرار */
+button {
+    padding: 18px 0;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #334155;
+    color: #f1f5f9;
+    transition: transform 0.1s ease, filter 0.2s ease;
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* الأرقام */
+.number {
+    background-color: #334155;
+}
+
+/* العمليات ÷ × - + % */
+.operation {
+    background-color: #003fee;
+    color: #ffffff;
+}
+
+/* زرار المسح C */
+.clear {
+    background-color: #f60000;
+    color: #ffffff;
+}
+
+/* زرار الحذف ⌫ */
+.delete {
+    background-color: #28303c;
+}
+
+/* زرار النقطة */
+.decimal {
+    background-color: #334155;
+}
+
+/* زرار يساوي */
+.equal {
+    background-color: #0a8637;
+    color: #ffffff;
+    grid-column: span 2;
+}
